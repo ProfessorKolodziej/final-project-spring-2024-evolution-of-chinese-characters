@@ -66,7 +66,7 @@ to help you out.
 		line-height: 25px;
 	}
 	.history-more a {
-		margin-bottom: 4%;
+		margin-bottom: 9%;
 	}
 	.water-content p {
 		font-size: 10px;
@@ -80,10 +80,10 @@ to help you out.
 	.show-list .water-img {
 		width: 30%;
 	}
-	.regular {
+	.adjust2 {
 		margin-bottom: 3%;
 	}
-	.bold{
+	.adjust1{
 		margin-bottom: 2%;
 	}
 	.introduction-more {
@@ -183,7 +183,7 @@ to help you out.
 	  font-size: 25px;
 	}
 	.arrow {
-	  width: 77px;
+	  width: 50px;
 	}
 	.introduction-more {
 	  flex-direction: row;
@@ -195,10 +195,10 @@ to help you out.
 	.show-image img {
 	  width: auto;
 	}
-	.bold {
+	.adjust1 {
 	  margin-bottom: 30px;
 	}
-	.regular {
+	.adjust2 {
 	  margin-bottom: 30px;
 	}
 	.show-list .water-img {
@@ -216,18 +216,18 @@ to help you out.
 h1 {
 	text-align: center;
 	font-family: "Lora", serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 p {
 	font-family: "Lora", serif;
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 	
 }
 h3 {
 	font-family: "Lora", serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 .introduction-more {
@@ -240,7 +240,7 @@ h3 {
 	background-color: #fff;
 	text-align: center;
 	font-family: "Lora", serif;
-	font-weight: bold;
+	font-weight: 700;
 	border-radius: 40px;
 	transition: all 0.3s;
 }
@@ -388,7 +388,7 @@ h1 {
 	justify-content: center;
 }
 .show-list.active {
-	margin-left: -6%;
+	margin-left: -16%;
 }
 .arrow {
 	cursor: pointer;
