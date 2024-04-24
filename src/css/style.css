@@ -4,10 +4,25 @@ You can write a color in directly, or use variables.
 Try changing the color from blue to red in the
 primary color variable below.
 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
 
 body{
-	background-image: url('../images/paperbackground.svg');
+	background-image: url('../images/paperbackground.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height:  100vh;
+	background-attachment:fixed;
 }
+
+
 
 
 /*
@@ -25,9 +40,360 @@ to help you out.
 
 
 /* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
-	.content-container {
-		margin: 0 auto;
-		max-width: 768px;
+@media screen and (min-width: 320px) {
+	h1 {
+		font-size: 18px;
+	}
+	.subtitle {
+		font-size: 15px;
+	}
+	p, h3 {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	.introduction-more a,
+	.demonstration-introduce,
+	.demonstration-info a,
+	.history-more a,
+	.show-image a,
+	.water-more a {
+		font-size: 8px;
+		line-height: 25px;
+	}
+	.demonstration-info p {
+		font-size: 14px;
+		margin: 5% 0;
+		line-height: 25px;
+	}
+	.history-more a {
+		margin-bottom: 4%;
+	}
+	.water-content p {
+		font-size: 10px;
+	}
+	.water-tip {
+		font-size: 7px;
+	}
+	.arrow {
+		width: 20px;
+	}
+	.show-list .water-img {
+		width: 30%;
+	}
+	.regular {
+		margin-bottom: 3%;
+	}
+	.bold{
+		margin-bottom: 2%;
+	}
+	.introduction-more {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.introduction-more a {
+		width: 60%;
+		margin-top: 3%;
+	}
+	.show-image img {
+		width: 60%;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	h1 {
+	  font-size: 45px;
+	}
+	.subtitle {
+		font-size: 33px;
+	}
+	p, h3 {
+	  font-size: 20px;
+	  line-height: 50px;
+	}
+	.introduction-more a,
+	.demonstration-introduce,
+	.demonstration-info a,
+	.history-more a,
+	.show-image a,
+	.water-more a {
+	  font-size: 15px;
+	  line-height: 70px;
+	}
+	.demonstration-info p {
+	  font-size: 30px;
+	  margin: 5% 0;
+	  line-height: 70px;
+	}
+	.history-more a {
+	  margin-bottom: 4%;
+	}
+	.water-content p {
+	  font-size: 30px;
+	}
+	.water-tip {
+	  font-size: 15px;
+	}
+	.arrow {
+	  width: 40px;
+	}
+	.show-list .water-img {
+	  width: 30%;
+	}
+	.introduction-more {
+	  flex-direction: row;
+	  align-items: align-items;
+	}
+	.introduction-more a {
+	  width: 48%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	h1 {
+	  font-size: 64px;
+	}
+	.subtitle {
+		font-size: 45px;
+	}
+	p, h3 {
+	  font-size: 25px;
+	  line-height: 50px;
+	}
+	.introduction-more a,
+	.demonstration-introduce,
+	.demonstration-info a,
+	.history-more a,
+	.show-image a,
+	.water-more a {
+	  font-size: 25px;
+	  line-height: 78px;
+	}
+	.demonstration-info p {
+	  font-size: 55px;
+	  margin: 3% 0;
+	  line-height: 78px;
+	}
+	.history-more a {
+	  margin-bottom: 2%;
+	}
+	.water-content p {
+	  font-size: 40px;
+	}
+	.water-tip {
+	  font-size: 25px;
+	}
+	.arrow {
+	  width: 77px;
+	}
+	.introduction-more {
+	  flex-direction: row;
+	  align-items: align-items;
+	}
+	.introduction-more a {
+	  width: 46%;
+	}
+	.show-image img {
+	  width: auto;
+	}
+	.bold {
+	  margin-bottom: 30px;
+	}
+	.regular {
+	  margin-bottom: 30px;
+	}
+	.show-list .water-img {
+	  width: auto;
+	}
+}
+
+/* introduction start */
+.content-container {
+	width: 96%;
+	margin: 0 auto;
+	padding: 2% 0;
+	min-width: 320px;
+}
+h1 {
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	font-style: normal;
+}
+p {
+	font-family: "Lora", serif;
+	font-weight: normal;
+	font-style: normal;
+	
+}
+h3 {
+	font-family: "Lora", serif;
+	font-weight: bold;
+	font-style: normal;
+}
+.introduction-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.introduction-more a {
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.introduction-more a:hover {
+	background: #000;
+	color: #fff;
+}
+/* introduction end */
+
+/* demonstration start */
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.demonstration-introduce {
+	display: inline-block;
+	padding: 0 4%;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+}
+.demonstration-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+}
+.demonstration-info p {
+	width: 50%;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	
+}
+.demonstration-info p:nth-of-type(2) {
+	cursor: pointer;
+}
+.demonstration-info a {
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.demonstration-info a:hover {
+	background: #000;
+	color: #fff;
+}
+/* demonstration end */
+
+/* history start */
+.history-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.history-more a {
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.history-more a:hover {
+	background: #000;
+	color: #fff;
+}
+/* history end */
+
+/* Six Script starts */
+h1 {
+	font-family: "Lora", serif;
+	font-weight: bold;
+}
+.show-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.show-image a {
+	margin-top: 2%;
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.show-image a:hover {
+	background: #000;
+	color: #fff;
+}
+/* Six Scripts end */
+
+/* water start */
+.water-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.water-more a {
+	margin-top: 2%;
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.water-more a:hover {
+	background: #000;
+	color: #fff;
+}
+.water-tip, .water-content p {
+	font-family: "Lora", serif;
+	font-weight: bold;
+}
+.water-content {
+	text-align: center;
+}
+.show-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-list.active {
+	margin-left: -6%;
+}
+.arrow {
+	cursor: pointer;
+}
+.show-list .water-img {
+	margin: 0 2%;
+}
+/* water end */  
