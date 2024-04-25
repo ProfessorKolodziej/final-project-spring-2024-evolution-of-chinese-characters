@@ -47,3 +47,4 @@ function createWater () {
     }
     nextBtn.style.display = currentIndex == images.length - 1 ? "none" : "block"
 }
+

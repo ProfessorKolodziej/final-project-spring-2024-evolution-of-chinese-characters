@@ -7,5 +7,5 @@
 // - You'll need to link this file to your HTML :)
 
 document.getElementById("water").addEventListener("click", function () {
-    window.location.href = "water.html"
+    window.location.href = "Water.html"
 })

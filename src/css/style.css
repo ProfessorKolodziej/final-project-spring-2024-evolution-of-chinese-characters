@@ -40,64 +40,64 @@ to help you out.
 
 
 /* This uses the same value as --size-xs. */
-@media screen and (min-width: 320px) {
-	h1 {
-		font-size: 18px;
-	}
-	.subtitle {
-		font-size: 15px;
-	}
-	p, h3 {
-		font-size: 10px;
-		line-height: 20px;
-	}
-	.introduction-more a,
-	.demonstration-introduce,
-	.demonstration-info a,
-	.history-more a,
-	.show-image a,
-	.water-more a {
-		font-size: 8px;
-		line-height: 25px;
-	}
-	.demonstration-info p {
-		font-size: 14px;
-		margin: 5% 0;
-		line-height: 25px;
-	}
-	.history-more a {
-		margin-bottom: 9%;
-	}
-	.water-content p {
-		font-size: 10px;
-	}
-	.water-tip {
-		font-size: 7px;
-	}
-	.arrow {
-		width: 20px;
-	}
-	.show-list .water-img {
-		width: 30%;
-	}
-	.adjust2 {
-		margin-bottom: 3%;
-	}
-	.adjust1{
-		margin-bottom: 2%;
-	}
-	.introduction-more {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.introduction-more a {
-		width: 60%;
-		margin-top: 3%;
-	}
-	.show-image img {
-		width: 60%;
-	}
+
+h1 {
+	font-size: 18px;
 }
+.subtitle {
+	font-size: 15px;
+}
+p, h3 {
+	font-size: 10px;
+	line-height: 20px;
+}
+.introduction-more a,
+.demonstration-introduce,
+.demonstration-info a,
+.history-more a,
+.show-image a,
+.water-more a {
+	font-size: 8px;
+	line-height: 25px;
+}
+.demonstration-info p {
+	font-size: 14px;
+	margin: 5% 0;
+	line-height: 25px;
+}
+.history-more a {
+	margin-bottom: 9%;
+}
+.water-content p {
+	font-size: 10px;
+}
+.water-tip {
+	font-size: 7px;
+}
+.arrow {
+	width: 20px;
+}
+.show-list .water-img {
+	width: 30%;
+}
+.adjust2 {
+	margin-bottom: 3%;
+}
+.adjust1{
+	margin-bottom: 2%;
+}
+.introduction-more {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.introduction-more a {
+	width: 60%;
+	margin-top: 3%;
+}
+.show-image img {
+	width: 60%;
+}
+
 
 @media screen and (min-width: 768px) {
 	h1 {
