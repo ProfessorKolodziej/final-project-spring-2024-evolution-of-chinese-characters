@@ -56,7 +56,10 @@ p, h3 {
 .demonstration-info a,
 .history-more a,
 .show-image a,
-.water-more a {
+.water-more a,
+.sun-more a,
+.mountain-more a,
+.human-more a {
 	font-size: 8px;
 	line-height: 25px;
 }
@@ -68,17 +71,26 @@ p, h3 {
 .history-more a {
 	margin-bottom: 9%;
 }
-.water-content p {
+.water-content p,
+.sun-content p,
+.mountain p,
+.human p {
 	font-size: 10px;
 }
-.water-tip {
+.water-tip,
+.sun-tip,
+.mountain-tip,
+.human-tip {
 	font-size: 7px;
 }
 .arrow {
 	width: 20px;
 }
-.show-list .water-img {
-	width: 30%;
+.show-list .water-img,
+.show-list .sun-img,
+.show-list .mountain-img,
+.show-list .human-img {
+	width: 20%;
 }
 .adjust2 {
 	margin-bottom: 3%;
@@ -96,6 +108,9 @@ p, h3 {
 }
 .show-image img {
 	width: 60%;
+}
+.wordtitle{
+	margin-top: 50px;
 }
 
 
@@ -115,7 +130,10 @@ p, h3 {
 	.demonstration-info a,
 	.history-more a,
 	.show-image a,
-	.water-more a {
+	.water-more a,
+	.sun-more a,
+	.mountain-more a,
+	.human-more a {
 	  font-size: 15px;
 	  line-height: 70px;
 	}
@@ -127,17 +145,26 @@ p, h3 {
 	.history-more a {
 	  margin-bottom: 4%;
 	}
-	.water-content p {
+	.water-content p,
+	.sun-content p,
+	.mountain-content p,
+	.human-content p {
 	  font-size: 30px;
 	}
-	.water-tip {
+	.water-tip,
+	.sun-tip,
+	.mountain-tip,
+	.human-tip {
 	  font-size: 15px;
 	}
 	.arrow {
 	  width: 40px;
 	}
-	.show-list .water-img {
-	  width: 30%;
+	.show-list .water-img,
+	.show-list .sun-img,
+	.show-list .mountain-img,
+	.show-list .human-img {
+	  width: 20%;
 	}
 	.introduction-more {
 	  flex-direction: row;
@@ -145,6 +172,12 @@ p, h3 {
 	}
 	.introduction-more a {
 	  width: 48%;
+	}
+	.show-list .water-img,
+	.show-list .sun-img,
+	.show-list .mountain-img,
+	.show-list .human-img {
+		width: 150px;
 	}
 }
 
@@ -164,7 +197,10 @@ p, h3 {
 	.demonstration-info a,
 	.history-more a,
 	.show-image a,
-	.water-more a {
+	.water-more a,
+	.sun-more a,
+	.mountain-more a,
+	.human-more a {
 	  font-size: 25px;
 	  line-height: 78px;
 	}
@@ -176,10 +212,16 @@ p, h3 {
 	.history-more a {
 	  margin-bottom: 2%;
 	}
-	.water-content p {
+	.water-content p,
+	.sun-content p,
+	.mountain-content p,
+	.human-content p {
 	  font-size: 40px;
 	}
-	.water-tip {
+	.water-tip,
+	.sun-tip,
+	.mountain-tip,
+	.human-tip {
 	  font-size: 25px;
 	}
 	.arrow {
@@ -201,8 +243,23 @@ p, h3 {
 	.adjust2 {
 	  margin-bottom: 30px;
 	}
-	.show-list .water-img {
+	.show-list .water-img,
+	.show-list .sun-img,
+	.show-list .mountain-img,
+	.show-list .human-img {
 	  width: auto;
+	}
+	.adjust1 {
+		margin-bottom: 30px;
+	}
+	.adjust2 {
+		margin-bottom: 30px;
+	}
+	.show-list .water-img,
+	.show-list .sun-img,
+	.show-list .mountain-img,
+	.show-list .human-img {
+		width: 220px;
 	}
 }
 
@@ -397,3 +454,138 @@ h1 {
 	margin: 0 2%;
 }
 /* water end */  
+
+/* sun start */
+.sun-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sun-more a {
+	margin-top: 2%;
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.sun-more a:hover {
+	background: #000;
+	color: #fff;
+}
+.sun-tip, .sun-content p {
+	font-family: "Lora", serif;
+	font-weight: bold;
+}
+.sun-content {
+	text-align: center;
+}
+.show-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-list.active {
+	margin-left: -16%;
+}
+.arrow {
+	cursor: pointer;
+}
+.show-list .sun-img {
+	margin: 0 2%;
+}
+/* sun end */  
+
+/* mountain start */
+.mountain-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mountain-more a {
+	margin-top: 2%;
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.mountain-more a:hover {
+	background: #000;
+	color: #fff;
+}
+.mountain-tip, .mountain-content p {
+	font-family: "Lora", serif;
+	font-weight: bold;
+}
+.mountain-content {
+	text-align: center;
+}
+.show-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-list.active {
+	margin-left: -16%;
+}
+.arrow {
+	cursor: pointer;
+}
+.show-list .mountain-img {
+	margin: 0 2%;
+}
+/* mountain end */  
+
+/* human start */
+.human-more {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.human-more a {
+	margin-top: 2%;
+	width: 30%;
+	display: inline-block;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.3s;
+}
+.human-more a:hover {
+	background: #000;
+	color: #fff;
+}
+.human-tip, .human-content p {
+	font-family: "Lora", serif;
+	font-weight: bold;
+}
+.human-content {
+	text-align: center;
+}
+.show-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-list.active {
+	margin-left: -16%;
+}
+.arrow {
+	cursor: pointer;
+}
+.show-list .human-img {
+	margin: 0 2%;
+}
+/* human end */  

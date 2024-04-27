@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-	<title>Demonstration</title>
+	<title>Human</title>
 	<!--
 		This is where you should link your CSS file.
 	-->
@@ -16,23 +16,26 @@
 
 <body>
 	<main class="content-container">
-		<h1 class="adjust1">Demonstration</h1>
-        <div class="flex-center">
-			<p class="demonstration-introduce">Clicking the word and check the demonstration of the evolution</p>
-        </div>
-        <div class="demonstration-info">
-			<p id="sun">Sun</p>
-            <p id="water">Water</p>
-            <p id="mountain">Mountain</p>
-			<p id="human">Human</p>
+		<div class="human-more">
 			<a href="index.html">Home Page</a>
 			<a href="history.html">Back to History Page </a>
-	    </div>
+			<a href="demonstration.html">Back to Demonstration</a>
+		</div>
+		<h1 class="wordtitle">Human</h1>
+		<div class="human-content">
+			<div class="show-list">
+				<span class="human-tip">Click the arrow to see the <br /> changes of this character</span>
+				<img src="images/arrow-left.svg" alt="left" class="arrow prev-btn">
+				<img src="images/human-1.png" alt="HumanImage" class="human-img">
+				<img src="images/arrow-right.svg" alt="right" class="arrow next-btn">
+			</div>
+			<p class="human-name">'Oracle Bone<br> 1600 to 1100 BC</p>
+		</div>
 	</main>
 	<!--
 		This is where you should link your JS file.
 	-->
-	<script src="js/demonstration.js"></script>
+	<script src="js/human.js"></script>
 </body>
 
 </html>

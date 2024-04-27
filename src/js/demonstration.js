@@ -7,5 +7,17 @@
 // - You'll need to link this file to your HTML :)
 
 document.getElementById("water").addEventListener("click", function () {
-    window.location.href = "Water.html"
+  window.location.href = "Water.html"
+})
+
+document.getElementById("sun").addEventListener("click", function () {
+  window.location.href = "Sun.html"
+})
+
+document.getElementById("mountain").addEventListener("click", function () {
+  window.location.href = "Mountain.html"
+})
+
+document.getElementById("human").addEventListener("click", function () {
+  window.location.href = "Human.html"
 })
