@@ -1,3 +1,12 @@
+// This is where you should write all JavaScript
+// for your project. Remember a few things as you start!
+// - Use let or const for all variables
+// - Do not use jQuery - use JavaScript instead
+// - Do not use onclick - use addEventListener instead
+// - Run npm run test regularly to check autograding
+// - You'll need to link this file to your HTML :)
+
+
 // Define image array
 let images = [
   { img: 'mountain-1.png', name: 'Oracle Bone<br> 1600 BC to 1100 BC' },
